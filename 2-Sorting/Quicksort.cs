@@ -26,9 +26,9 @@ namespace ALGA
          * 
          * This method should return the position of the pivot value after partitioning is complete
          * 
-         * For example: partition([4, 9, 0, 5, 2], 3, 0, 4)
+         * For example: partition([4, 9, 5, 0, 2], 2, 0, 4)
          * should partition the values between indices 0...4 (inclusive) using the value 5 as the pivot
-         * A possible partitioning would be: [2, 0, 5, 9, 4], this method should return 2 as that is where
+         * A possible partitioning would be: [2, 0, 4, 5, 9], this method should return 3 as that is where
          * the pivot value 5 has ended up.
          * This method may assume there are no equal values
          */
