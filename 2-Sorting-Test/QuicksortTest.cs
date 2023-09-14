@@ -107,7 +107,7 @@ namespace ALGA_test
         [Test]
         public void QuicksortSortedInput()
         {
-            SortList list = new SortList(100, true);
+            SortList list = new SortList(100, true, false);
             Quicksort.quicksort(list);
             Assert.IsTrue(list.isSorted());
             Assert.LessOrEqual(list.Comparisons, 5000);
@@ -125,7 +125,7 @@ namespace ALGA_test
         [Test]
         public void QuicksortSortedInputEfficient()
         {
-            SortList list = new SortList(100, true, true);
+            SortList list = new SortList(100, true, false);
             Quicksort.quicksort(list);
             Assert.LessOrEqual(list.Comparisons, 5000);
             Assert.LessOrEqual(list.Swaps, 200);
