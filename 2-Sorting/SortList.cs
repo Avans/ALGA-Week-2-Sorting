@@ -95,7 +95,7 @@ namespace ALGA
                 throw new IndexOutOfRangeException(String.Format("First swap index ({0}) is out of bounds (0-{1})", i1, Count - 1));
             } else if(i2 < 0 || i2 >= Count)
             {
-                throw new IndexOutOfRangeException(String.Format("Second swap index ({0}) is out of bounds (0-{1})", i1, Count - 1));
+                throw new IndexOutOfRangeException(String.Format("Second swap index ({0}) is out of bounds (0-{1})", i2, Count - 1));
             }
             int temp = list[i1];
             list[i1] = list[i2];
@@ -118,7 +118,7 @@ namespace ALGA
             }
             else if (i2 < 0 || i2 >= Count)
             {
-                throw new IndexOutOfRangeException(String.Format("Second compare index ({0}) is out of bounds (0-{1})", i1, Count - 1));
+                throw new IndexOutOfRangeException(String.Format("Second compare index ({0}) is out of bounds (0-{1})", i2, Count - 1));
             }
             Comparisons++;
 
